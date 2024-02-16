@@ -1,1 +1,1 @@
-test
+This is test npm package
