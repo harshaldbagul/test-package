@@ -5,7 +5,16 @@ function isPalindromString(str) {
 }
 
 function isString(str) {
- return typeof str === "string" || str instanceof String;
+  return typeof str === "string" || str instanceof String;
 }
 
-module.exports = { isString, isPalindromString };
+function isNumber(num) {
+  return typeof num === "number" || num instanceof Number;
+}
+
+function isEven(num) {
+  if (!isNumber(num)) throw "Not an number";
+  return num % 2 === 0;
+}
+
+module.exports = { isString, isPalindromString, isEven };
