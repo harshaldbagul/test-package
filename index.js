@@ -1,5 +1,5 @@
 function isPalindromString(str) {
-  if (!isString(str)) throw "Not an string";
+  if (!isString(str)) throw "Not an string!";
   const revStr = str.split("").reverse().join("");
   return str === revStr;
 }
@@ -13,7 +13,7 @@ function isNumber(num) {
 }
 
 function isEven(num) {
-  if (!isNumber(num)) throw "Not an number";
+  if (!isNumber(num)) throw "Not an number!";
   return num % 2 === 0;
 }
 
